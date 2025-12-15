@@ -22,7 +22,7 @@ while ($row = mysqli_fetch_assoc($data)) {
 <tr>
   <td><?= $row['id'] ?></td>
   <td><?= $row['nama'] ?></td>
-  <td><?= $row['NPM'] ?></td>
+  <td><?= $row['npm'] ?></td>
   <td>
     <a href="edit.php?id=<?= $row['id'] ?>">Edit</a> |
     <a href="hapus.php?id=<?= $row['id'] ?>" onclick="return confirm('Hapus data?')">Hapus</a>
