@@ -11,7 +11,7 @@ $data = mysqli_fetch_assoc(
 
 <form method="post">
 Nama: <input type="text" name="nama" value="<?= $data['nama'] ?>" required><br><br>
-NIM: <input type="text" name="npm" value="<?= $data['npm'] ?>" required><br><br>
+NIM: <input type="text" name="nim" value="<?= $data['nim'] ?>" required><br><br>
 <button type="submit">Update</button>
 </form>
 
@@ -20,7 +20,7 @@ if ($_POST) {
   mysqli_query($koneksi,
     "UPDATE mahasiswa SET
      nama='$_POST[nama]',
-     npm='$_POST[npm]'
+     nim='$_POST[nim]'
      WHERE id=$id");
   header("Location: index.php");
 }

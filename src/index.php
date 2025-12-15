@@ -11,7 +11,7 @@ include 'config.php';
 <tr>
   <th>ID</th>
   <th>Nama</th>
-  <th>NPM</th>
+  <th>NIM</th>
   <th>Aksi</th>
 </tr>
 
@@ -22,7 +22,7 @@ while ($row = mysqli_fetch_assoc($data)) {
 <tr>
   <td><?= $row['id'] ?></td>
   <td><?= $row['nama'] ?></td>
-  <td><?= $row['npm'] ?></td>
+  <td><?= $row['nim'] ?></td>
   <td>
     <a href="edit.php?id=<?= $row['id'] ?>">Edit</a> |
     <a href="hapus.php?id=<?= $row['id'] ?>" onclick="return confirm('Hapus data?')">Hapus</a>
