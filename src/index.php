@@ -1,32 +1,47 @@
 <?php
 include 'config.php';
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Mahasiswa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-5">
 
-<h2>Data Mahasiswa</h2>
+<div class="container">
+  <h2 class="mb-4">Data Mahasiswa</h2>
 
-<a href="tambah.php">+ Tambah Data</a>
-<br><br>
+  <a href="tambah.php" class="btn btn-primary mb-3">+ Tambah Data</a>
 
-<table border="1" cellpadding="10">
-<tr>
-  <th>ID</th>
-  <th>Nama</th>
-  <th>NIM</th>
-  <th>Aksi</th>
-</tr>
+  <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Nama</th>
+        <th>NIM</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+      $data = mysqli_query($koneksi, "SELECT * FROM mahasiswa");
+      while ($row = mysqli_fetch_assoc($data)) {
+      ?>
+      <tr>
+        <td><?= $row['id'] ?></td>
+        <td><?= $row['nama'] ?></td>
+        <td><?= $row['nim'] ?></td>
+        <td>
+          <a href="edit.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-warning">Edit</a>
+          <a href="hapus.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Hapus data?')">Hapus</a>
+        </td>
+      </tr>
+      <?php } ?>
+    </tbody>
+  </table>
+</div>
 
-<?php
-$data = mysqli_query($koneksi, "SELECT * FROM mahasiswa");
-while ($row = mysqli_fetch_assoc($data)) {
-?>
-<tr>
-  <td><?= $row['id'] ?></td>
-  <td><?= $row['nama'] ?></td>
-  <td><?= $row['nim'] ?></td>
-  <td>
-    <a href="edit.php?id=<?= $row['id'] ?>">Edit</a> |
-    <a href="hapus.php?id=<?= $row['id'] ?>" onclick="return confirm('Hapus data?')">Hapus</a>
-  </td>
-</tr>
-<?php } ?>
-</table>
+</body>
+</html>
