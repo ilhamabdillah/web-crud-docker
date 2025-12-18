@@ -142,5 +142,5 @@ Proyek ini dibuat untuk memenuhi tugas kelompok **Web Application Container**.
 
 ---
 
-✨ **Aplikasi siap digunakan dan dipresentasikan** ✨
+
 
