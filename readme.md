@@ -2,9 +2,9 @@
 
 ## 👥 Identitas Kelompok
 **Kelompok 2 – Web Application Container:**
-  1.Claudya - 062430701444
-  2.Ilham Abdillah - 062430701447
-  3.Khaidir Al Fathir - 062430701448  
+ **1.Claudya - 062430701444**
+  **2.Ilham Abdillah - 062430701447**
+  **3.Khaidir Al Fathir - 062430701448**  
 **Judul Proyek:** Aplikasi Web Dinamis Berbasis Docker
 
 ---
