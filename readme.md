@@ -41,19 +41,10 @@ project/
 │── tambah.php
 │── edit.php
 │── hapus.php
-│── style.css
 ```
 
----
 
-## 🐳 Dockerfile
-Dockerfile digunakan untuk membuat image web server PHP + Apache.
 
-```dockerfile
-FROM php:8.2-apache
-RUN docker-php-ext-install mysqli
-COPY . /var/www/html/
-```
 
 ---
 
