@@ -1,6 +1,6 @@
-# 📦 Aplikasi Web Dinamis CRUD Mahasiswa Berbasis Docker
+# Aplikasi Web Dinamis CRUD Mahasiswa Berbasis Docker
 
-## 👥 Identitas Kelompok
+##  Identitas Kelompok
 **Kelompok 2 – Web Application Container:**
  **1.Claudya - 062430701444**
   **2.Ilham Abdillah - 062430701447**
@@ -9,12 +9,12 @@
 
 ---
 
-## 📖 Deskripsi
+## Deskripsi
 Proyek ini merupakan aplikasi web dinamis sederhana berbasis **PHP dan MySQL** yang dijalankan menggunakan **Docker**. Aplikasi memiliki fitur **CRUD (Create, Read, Update, Delete)** untuk mengelola data mahasiswa. Docker digunakan agar aplikasi dapat dijalankan secara konsisten tanpa bergantung pada konfigurasi sistem operasi.
 
 ---
 
-## 🎯 Tujuan
+## Tujuan
 - Memahami konsep container menggunakan Docker
 - Menjalankan aplikasi web dinamis di dalam container
 - Mengimplementasikan fitur CRUD
@@ -22,7 +22,7 @@ Proyek ini merupakan aplikasi web dinamis sederhana berbasis **PHP dan MySQL** y
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 - PHP 8.x
 - Apache Web Server
 - MySQL 8.0
@@ -31,7 +31,7 @@ Proyek ini merupakan aplikasi web dinamis sederhana berbasis **PHP dan MySQL** y
 
 ---
 
-## 📂 Struktur Folder Proyek
+##  Struktur Folder Proyek
 ```
 project/
 │── Dockerfile
@@ -48,7 +48,7 @@ project/
 
 ---
 
-## ⚙️ Docker Compose
+## Docker Compose
 Docker Compose digunakan untuk menjalankan dua container: **web** dan **database**.
 
 ```yaml
@@ -77,7 +77,7 @@ volumes:
 
 ---
 
-## 🗄️ Database
+##  Database
 Nama database: **db_mahasiswa**  
 Nama tabel: **mahasiswa**
 
@@ -93,7 +93,7 @@ Database menggunakan **Docker Volume** agar data tetap tersimpan walaupun contai
 
 ---
 
-## 🔑 Konfigurasi Database (`config.php`)
+##  Konfigurasi Database (`config.php`)
 ```php
 <?php
 $koneksi = mysqli_connect("db", "root", "root", "db_mahasiswa");
@@ -105,7 +105,7 @@ if (!$koneksi) {
 
 ---
 
-## 🔄 Fitur CRUD
+## Fitur CRUD
 - **Create** : Menambahkan data mahasiswa
 - **Read** : Menampilkan data mahasiswa
 - **Update** : Mengubah data mahasiswa
@@ -113,7 +113,7 @@ if (!$koneksi) {
 
 ---
 
-## 🌐 Cara Menjalankan Aplikasi
+## Cara Menjalankan Aplikasi
 1. Jalankan Docker Desktop
 2. Buka terminal di folder project
 3. Jalankan perintah:
@@ -127,17 +127,17 @@ http://localhost:8080
 
 ---
 
-## 🎨 Tampilan Aplikasi
+## Tampilan Aplikasi
 Aplikasi menggunakan CSS sederhana agar tampilan lebih rapi dan mudah digunakan.
 
 ---
 
-## ✅ Kesimpulan
+## Kesimpulan
 Aplikasi web dinamis CRUD berhasil dijalankan menggunakan Docker. Dengan Docker, aplikasi dapat berjalan secara konsisten dan terstruktur. Proyek ini telah memenuhi kriteria tugas yaitu web dinamis, berbasis Docker, dan memiliki fitur CRUD.
 
 ---
 
-## 📌 Penutup
+## Penutup
 Proyek ini dibuat untuk memenuhi tugas kelompok **Web Application Container**.
 
 ---
